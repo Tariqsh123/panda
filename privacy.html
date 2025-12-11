@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panda Street Company</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <!-- ICONS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <div class="left-space"></div>
+
+        <!-- Center Logo + Desktop Menu -->
+        <div class="center-box">
+            <img src="images/logo.png" class="logo" alt="Panda Street Company">
+
+            <nav class="menu">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="shop.html">Shop</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+
+        <!-- Right Icons + Hamburger -->
+        <div class="right-icons">
+            <a href="#" class="icon"><i class="fa-regular fa-user"></i></a>
+            <a href="#" class="icon"><i class="fa-solid fa-cart-shopping"></i></a>
+
+            <div class="hamburger">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- MOBILE MENU -->
+    <div class="mobile-menu">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="shop.html">Shop</a>
+        <a href="contact.html">Contact</a>
+        <!-- <a href="about.html">Account</a> -->
+        <!-- <a href="#">Cart</a> -->
+    </div>
+
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+const mobileMenu = document.querySelector(".mobile-menu");
+
+hamburger.addEventListener("click", () => {
+    mobileMenu.style.display =
+        mobileMenu.style.display === "flex" ? "none" : "flex";
+});
+
+    </script>
+
+    <!-- NAv End -->
+
+   <section class="privacy-policy-section">
+  <div class="privacy-container">
+    <h1>Privacy Policy</h1>
+
+    <p>At Panda Street Company, your privacy is important to us. This Privacy Policy explains how we collect, use, and protect your personal information when you use our website and services.</p>
+
+    <h2>1. Information We Collect</h2>
+    <p>We may collect the following information:</p>
+    <ul>
+      <li><strong>Personal Information:</strong> Name, email address, phone number, and billing/shipping address.</li>
+      <li><strong>Account Information:</strong> Login credentials and preferences.</li>
+      <li><strong>Usage Information:</strong> Pages visited, products viewed, and shopping activity.</li>
+      <li><strong>Cookies:</strong> To enhance user experience and website functionality.</li>
+    </ul>
+
+    <h2>2. How We Use Your Information</h2>
+    <ul>
+      <li>To process and fulfill your orders.</li>
+      <li>To provide customer support.</li>
+      <li>To send updates, promotions, and newsletters.</li>
+      <li>To improve our website and services.</li>
+      <li>To comply with legal obligations.</li>
+    </ul>
+
+    <h2>3. Data Protection</h2>
+    <p>We implement industry-standard security measures to protect your personal data against unauthorized access, alteration, disclosure, or destruction.</p>
+
+    <h2>4. Sharing Your Information</h2>
+    <p>We do not sell your personal information. We may share data with trusted third-party service providers for order fulfillment, payment processing, and website analytics.</p>
+
+    <h2>5. Your Rights</h2>
+    <ul>
+      <li>Access and update your personal information.</li>
+      <li>Request deletion of your data.</li>
+      <li>Opt-out of marketing communications.</li>
+    </ul>
+
+    <h2>6. Changes to This Privacy Policy</h2>
+    <p>We may update this policy periodically. Updates will be posted on this page with the revised date.</p>
+
+    <h2>7. Contact Us</h2>
+    <p>If you have questions or concerns about our privacy practices, please contact us at <strong>info@pandastreet.com</strong>.</p>
+  </div>
+</section>
+
+
+
+<!-- FOOTER SECTION -->
+<footer class="footer">
+    <div class="footer-container">
+
+        <!-- Column 1: Logo + About + Social -->
+        <div class="footer-column">
+            <img src="images/logo.png" alt="Panda Street Company" class="footer-logo">
+            <p>Your go-to place for handmade soaps and candles crafted with love.</p>
+            <div class="footer-social">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+
+        <!-- Column 2: Quick Access -->
+        <div class="footer-column">
+            <h4>Quick Access</h4>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+
+        <!-- Column 3: Legal -->
+        <div class="footer-column">
+            <h4>Legal</h4>
+            <ul>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+                <li><a href="terms.html">Terms & Conditions</a></li>
+                <li><a href="refund.html">Refund Policy</a></li>
+            </ul>
+        </div>
+
+        <!-- Column 4: Newsletter -->
+        <div class="footer-column">
+            <h4>Newsletter</h4>
+            <p>Subscribe to get the latest updates and offers.</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Enter your email">
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2025 Panda Street Company. All Rights Reserved.</p>
+    </div>
+</footer>
+
+
+
+<script src="script.js"></script>
+
+
+</body>
+</html>

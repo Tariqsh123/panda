@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panda Street Company</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+
+    <!-- ICONS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <div class="left-space"></div>
+
+        <!-- Center Logo + Desktop Menu -->
+        <div class="center-box">
+            <img src="images/logo.png" class="logo" alt="Panda Street Company">
+
+            <nav class="menu">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="shop.html">Shop</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+
+        <!-- Right Icons + Hamburger -->
+        <div class="right-icons">
+            <a href="#" class="icon"><i class="fa-regular fa-user"></i></a>
+            <a href="#" class="icon"><i class="fa-solid fa-cart-shopping"></i></a>
+
+            <div class="hamburger">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- MOBILE MENU -->
+    <div class="mobile-menu">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="shop.html">Shop</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+const mobileMenu = document.querySelector(".mobile-menu");
+
+hamburger.addEventListener("click", () => {
+    mobileMenu.style.display =
+        mobileMenu.style.display === "flex" ? "none" : "flex";
+});
+
+    </script>
+
+    <!-- NAv End -->
+
+
+<!-- product section -->
+ <!-- PRODUCT CARDS SECTION -->
+<section class="products-section">
+    <h2 class="section-title">All Products</h2>
+
+    <div class="products-grid">
+
+        <!-- Product 1 -->
+        <div class="product-card">
+            <img src="images/Mango Coconut Soap.webp" alt="Product Image">
+            <h3>Mango Coconut Soap</h3> 
+            <!-- Star Rating -->
+    <div class="product-rating">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+    </div>
+            <p class="price">$19</p>
+        </div>
+        <!-- Product 1 -->
+        <div class="product-card">
+            <img src="images/Lavender Soap.webp" alt="Product Image">
+            <h3>Lavender Soap</h3> 
+            <!-- Star Rating -->
+    <div class="product-rating">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+    </div>
+            <p class="price">$19</p>
+        </div>
+        <!-- Product 1 -->
+        <div class="product-card">
+            <img src="images/Key Lime Soap.webp" alt="Product Image">
+            <h3>Key Lime Soap</h3> 
+            <!-- Star Rating -->
+    <div class="product-rating">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+    </div>
+            <p class="price">$19</p>
+        </div>
+        <!-- Product 1 -->
+        <div class="product-card">
+            <img src="images/Holiday Wax Melt.webp" alt="Product Image">
+            <h3>Holiday Wax Melt</h3> 
+            <!-- Star Rating -->
+    <div class="product-rating">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+    </div>
+            <p class="price">$19</p>
+        </div>
+        <!-- Product 1 -->
+        <div class="product-card">
+            <img src="images/Green Day Spa Soap.webp" alt="Product Image">
+            <h3>Green Day Spa Soap</h3> 
+            <!-- Star Rating -->
+    <div class="product-rating">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+    </div>
+            <p class="price">$19</p>
+        </div>
+        <!-- Product 1 -->
+        <div class="product-card">
+            <img src="images/Golden Soap.webp" alt="Product Image">
+            <h3>Golden Soap</h3> 
+            <!-- Star Rating -->
+    <div class="product-rating">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+    </div>
+            <p class="price">$19</p>
+        </div>
+        <!-- Product 1 -->
+        <div class="product-card">
+            <img src="images/Free Form Pillar Candle.webp" alt="Product Image">
+            <h3>Free Form Pillar Candle</h3> 
+            <!-- Star Rating -->
+    <div class="product-rating">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+    </div>
+            <p class="price">$19</p>
+        </div>
+        <!-- Product 1 -->
+        <div class="product-card">
+            <img src="images/Cube Voilete Candle.webp" alt="Product Image">
+            <h3>Cube Voilete Candle Jar</h3> 
+            <!-- Star Rating -->
+    <div class="product-rating">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+    </div>
+            <p class="price">$19</p>
+        </div>
+        <!-- Product 1 -->
+        <div class="product-card">
+            <img src="images/Coconut Soap.webp" alt="Product Image">
+            <h3> Coconut Soap</h3> 
+            <!-- Star Rating -->
+    <div class="product-rating">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+    </div>
+            <p class="price">$22</p>
+        </div>
+        <!-- Product 1 -->
+        <div class="product-card">
+            <img src="images/Classic Apothecary Jar Candle.webp" alt="Product Image">
+            <h3> Classic Apothecary Jar Candle</h3> 
+            <!-- Star Rating -->
+    <div class="product-rating">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+    </div>
+            <p class="price">$22</p>
+        </div>
+        <!-- Product 1 -->
+        <div class="product-card">
+            <img src="images/Christmas Tree Candle in Bees Wax.webp" alt="Product Image">
+            <h3> Christmas Tree Candle in Bees Wax</h3> 
+            <!-- Star Rating -->
+    <div class="product-rating">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+    </div>
+            <p class="price">$25</p>
+        </div>
+        <!-- Product 1 -->
+        <div class="product-card">
+            <img src="images/Christmas Snowflake Jar Candle.webp" alt="Product Image">
+            <h3> Christmas Snowflake Jar Candle</h3> 
+            <!-- Star Rating -->
+    <div class="product-rating">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+    </div>
+            <p class="price">$29</p>
+        </div>
+        <!-- Product 1 -->
+        <div class="product-card">
+            <img src="images/Butter Agave Soap.webp" alt="Product Image">
+            <h3>Butter Agave Soap</h3> 
+            <!-- Star Rating -->
+    <div class="product-rating">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+    </div>
+            <p class="price">$6</p>
+        </div>
+        <!-- Product 1 -->
+        <div class="product-card">
+            <img src="images/Christmas Ball Ornament Candle.webp" alt="Product Image">
+            <h3>Christmas Ball Ornament Candle</h3> 
+            <!-- Star Rating -->
+    <div class="product-rating">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+    </div>
+            <p class="price">$6</p>
+        </div>
+        <!-- Product 1 -->
+        <div class="product-card">
+            <img src="images/Black Candle Jar Vanilla Fragrance 100% Soy Wax.webp" alt="Product Image">
+            <h3>Black Candle Jar Vanilla Fragrance 100% Soy Wax</h3> 
+            <!-- Star Rating -->
+    <div class="product-rating">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+    </div>
+            <p class="price">$6</p>
+        </div>
+        <!-- Product 1 -->
+        <div class="product-card">
+            <img src="images/Black African Soap.webp" alt="Product Image">
+            <h3>Black African Soap</h3> 
+            <!-- Star Rating -->
+    <div class="product-rating">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+    </div>
+            <p class="price">$6</p>
+        </div>
+        <!-- Product 1 -->
+        <div class="product-card">
+            <img src="images/Bastille Soap.webp" alt="Product Image">
+            <h3>Bastille Soap</h3> 
+            <!-- Star Rating -->
+    <div class="product-rating">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+    </div>
+            <p class="price">$6</p>
+        </div>
+        <!-- Product 1 -->
+        <div class="product-card">
+            <img src="images/Avocado-soap.webp" alt="Product Image">
+            <h3>Avocado Soap</h3> 
+            <!-- Star Rating -->
+    <div class="product-rating">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+    </div>
+            <p class="price">$6</p>
+        </div>
+        <!-- Product 1 -->
+        <div class="product-card">
+            <img src="images/anchor-elite-jar-candle.webp" alt="Product Image">
+            <h3> Anchor Elite Jar Candle</h3> 
+            <!-- Star Rating -->
+    <div class="product-rating">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+    </div>
+            <p class="price">$15.99</p>
+        </div>
+        <!-- Product 1 -->
+        <div class="product-card">
+            <img src="images/Luxurious Scented Candles.jpeg" alt="Product Image">
+            <h3>Luxurious Scented Candles</h3>
+            <!-- Star Rating -->
+    <div class="product-rating">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+    </div>
+            <p class="price">$12.99</p>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="product-card">
+            <img src="images/Scented-Candle-collection.jpeg" alt="Product Image">
+            <h3>Scented Candle Collection</h3>
+            <!-- Star Rating -->
+    <div class="product-rating">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+    </div>
+            <p class="price">$7.99</p>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="product-card">
+            <img src="images/Luxurious Scented soap.jpeg" alt="Product Image">
+            <h3>Luxurious Scented Soap</h3>
+            <!-- Star Rating -->
+    <div class="product-rating">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+    </div>
+            <p class="price">$14.50</p>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="product-card">
+            <img src="images/Aromatic Candle Collection.jpeg" alt="Product Image">
+            <h3>Aromatic Candle Collection</h3>
+            <!-- Star Rating -->
+    <div class="product-rating">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+    </div>
+            <p class="price">$6.50</p>
+        </div>
+
+        <!-- Product 5 -->
+        <div class="product-card">
+            <img src="images/Fern-pillar-candle.webp" alt="Product Image">
+            <h3>Firn Pillar Candle</h3>
+            <!-- Star Rating -->
+    <div class="product-rating">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+    </div>
+            <p class="price">$19.50</p>
+        </div>
+        <!-- Product 6 -->
+        <div class="product-card">
+            <img src="images/handcrafted-aromatherapy-candles.jpeg" alt="Product Image">
+            <h3>Hand Crafted Aromatherapy Candles</h3>
+            <!-- Star Rating -->
+    <div class="product-rating">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+    </div>
+            <p class="price">$25</p>
+        </div>
+        <!-- Product 7 -->
+        <div class="product-card">
+            <img src="images/Three Wick Bubble Candles.webp" alt="Product Image">
+            <h3>Three Wick Bubble Candles</h3>
+            <!-- Star Rating -->
+    <div class="product-rating">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+    </div>
+            <p class="price">$19.99</p>
+        </div>
+        <!-- Product 8 -->
+        <div class="product-card">
+            <img src="images/Clear Jar Swirl Candle.webp" alt="Product Image">
+            <h3>Clear Jar Swirl Candle</h3>
+            <!-- Star Rating -->
+    <div class="product-rating">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+    </div>
+            <p class="price">$12.50</p>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- FOOTER SECTION -->
+<footer class="footer">
+    <div class="footer-container">
+
+        <!-- Column 1: Logo + About + Social -->
+        <div class="footer-column">
+            <img src="images/logo.png" alt="Panda Street Company" class="footer-logo">
+            <p>Your go-to place for handmade soaps and candles crafted with love.</p>
+            <div class="footer-social">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+
+        <!-- Column 2: Quick Access -->
+        <div class="footer-column">
+            <h4>Quick Access</h4>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+
+        <!-- Column 3: Legal -->
+        <div class="footer-column">
+            <h4>Legal</h4>
+            <ul>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+                <li><a href="terms.html">Terms & Conditions</a></li>
+                <li><a href="refund.html">Refund Policy</a></li>
+            </ul>
+        </div>
+
+        <!-- Column 4: Newsletter -->
+        <div class="footer-column">
+            <h4>Newsletter</h4>
+            <p>Subscribe to get the latest updates and offers.</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Enter your email">
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2025 Panda Street Company. All Rights Reserved.</p>
+    </div>
+</footer>
+
+
+
+<script src="script.js"></script>
+
+
+</body>
+</html>

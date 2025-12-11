@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panda Street Company</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+
+    <!-- ICONS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <div class="left-space"></div>
+
+        <!-- Center Logo + Desktop Menu -->
+        <div class="center-box">
+            <img src="images/logo.png" class="logo" alt="Panda Street Company">
+
+            <nav class="menu">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="shop.html">Shop</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+
+        <!-- Right Icons + Hamburger -->
+        <div class="right-icons">
+            <a href="#" class="icon"><i class="fa-regular fa-user"></i></a>
+            <a href="#" class="icon"><i class="fa-solid fa-cart-shopping"></i></a>
+
+            <div class="hamburger">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- MOBILE MENU -->
+    <div class="mobile-menu">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="shop.html">Shop</a>
+        <a href="contact.html">Contact</a>
+        <!-- <a href="about.html">Account</a> -->
+        <!-- <a href="#">Cart</a> -->
+    </div>
+
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+const mobileMenu = document.querySelector(".mobile-menu");
+
+hamburger.addEventListener("click", () => {
+    mobileMenu.style.display =
+        mobileMenu.style.display === "flex" ? "none" : "flex";
+});
+
+    </script>
+
+    <!-- NAv End -->
+     <!-- hero Section -->
+      <!-- HERO SECTION -->
+<section class="hero">
+    <div class="overlay"></div>
+
+    <div class="hero-content">
+        <h1>Where Unique Meets Handmade</h1>
+        <a href="#" class="hero-btn">Shop Now</a>
+    </div>
+</section>
+
+<!-- After header -->
+ <!-- AFTER HEADER SECTION -->
+<section class="after-header">
+
+    <!-- Candles Box -->
+    <div class="box" style="background-image: url('images/candles-bg.jpeg');">
+        <div class="box-overlay"></div>
+        <div class="box-content">
+            <h2>Candles</h2>
+            <p>Hand-poured artisanal candles crafted to brighten your space with natural warmth.</p>
+        </div>
+    </div>
+
+    <!-- Soaps Box -->
+    <div class="box" style="background-image: url('images/soaps-bg.jpeg');">
+        <div class="box-overlay"></div>
+        <div class="box-content">
+            <h2>Soaps</h2>
+            <p>Luxurious handmade soaps enriched with pure ingredients for glowing, healthy skin.</p>
+        </div>
+    </div>
+
+</section>
+
+
+<!-- product section -->
+ <!-- PRODUCT CARDS SECTION -->
+<section class="products-section">
+    <h2 class="section-title">Latest Products</h2>
+
+    <div class="products-grid">
+
+        <!-- Product 1 -->
+        <div class="product-card">
+            <img src="images/Luxurious Scented Candles.jpeg" alt="Product Image">
+            <h3>Luxurious Scented Candles</h3>
+            <!-- Star Rating -->
+    <div class="product-rating">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+    </div>
+            <p class="price">$12.99</p>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="product-card">
+            <img src="images/Scented-Candle-collection.jpeg" alt="Product Image">
+            <h3>Scented Candle Collection</h3>
+            <!-- Star Rating -->
+    <div class="product-rating">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+    </div>
+            <p class="price">$7.99</p>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="product-card">
+            <img src="images/Luxurious Scented soap.jpeg" alt="Product Image">
+            <h3>Luxurious Scented Soap</h3>
+            <!-- Star Rating -->
+    <div class="product-rating">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+    </div>
+            <p class="price">$14.50</p>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="product-card">
+            <img src="images/Aromatic Candle Collection.jpeg" alt="Product Image">
+            <h3>Aromatic Candle Collection</h3>
+            <!-- Star Rating -->
+    <div class="product-rating">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+    </div>
+            <p class="price">$6.50</p>
+        </div>
+
+        <!-- Product 5 -->
+        <div class="product-card">
+            <img src="images/Fern-pillar-candle.webp" alt="Product Image">
+            <h3>Firn Pillar Candle</h3>
+            <!-- Star Rating -->
+    <div class="product-rating">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+    </div>
+            <p class="price">$19.50</p>
+        </div>
+        <!-- Product 6 -->
+        <div class="product-card">
+            <img src="images/handcrafted-aromatherapy-candles.jpeg" alt="Product Image">
+            <h3>Hand Crafted Aromatherapy Candles</h3>
+            <!-- Star Rating -->
+    <div class="product-rating">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+    </div>
+            <p class="price">$25</p>
+        </div>
+        <!-- Product 7 -->
+        <div class="product-card">
+            <img src="images/Three Wick Bubble Candles.webp" alt="Product Image">
+            <h3>Three Wick Bubble Candles</h3>
+            <!-- Star Rating -->
+    <div class="product-rating">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+    </div>
+            <p class="price">$19.99</p>
+        </div>
+        <!-- Product 8 -->
+        <div class="product-card">
+            <img src="images/Clear Jar Swirl Candle.webp" alt="Product Image">
+            <h3>Clear Jar Swirl Candle</h3>
+            <!-- Star Rating -->
+    <div class="product-rating">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+    </div>
+            <p class="price">$12.50</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- Feature Section -->
+ <!-- FEATURES SECTION -->
+<section class="features-section">
+    <div class="features-grid">
+
+        <!-- Feature 1 -->
+        <div class="feature-box">
+            <i class="fa-solid fa-truck"></i>
+            <h3>Free Delivery</h3>
+            <p>Get your orders delivered at your doorstep without any extra cost.</p>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="feature-box">
+            <i class="fa-solid fa-gem"></i>
+            <h3>Premium Quality</h3>
+            <p>We use high-quality ingredients to make our soaps and candles.</p>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="feature-box">
+            <i class="fa-solid fa-shield-halved"></i>
+            <h3>Secure Payment</h3>
+            <p>All payments are safe, encrypted, and hassle-free.</p>
+        </div>
+
+        <!-- Feature 4 -->
+        <div class="feature-box">
+            <i class="fa-solid fa-rotate-right"></i>
+            <h3>Easy Returns</h3>
+            <p>Not satisfied? Return your order easily within 7 days.</p>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- Review  -->
+ <!-- TESTIMONIALS SECTION -->
+<section class="testimonials-section">
+    <h2 class="section-title">What Our Customers Say</h2>
+
+    <div class="testimonials-grid">
+
+        <!-- Testimonial 1 -->
+        <div class="testimonial-box">
+            <i class="fa-solid fa-quote-left quote-icon"></i>
+            <p>"Amazing candles and soaps! The quality is top-notch and delivery was fast. Highly recommended!"</p>
+            <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+            <h4>Sarah J.</h4>
+        </div>
+
+        <!-- Testimonial 2 -->
+        <div class="testimonial-box">
+            <i class="fa-solid fa-quote-left quote-icon"></i>
+            <p>"Beautiful handmade products, excellent customer service, and the scents are heavenly."</p>
+            <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+            <h4>Mark D.</h4>
+        </div>
+
+        <!-- Testimonial 3 -->
+        <div class="testimonial-box">
+            <i class="fa-solid fa-quote-left quote-icon"></i>
+            <p>"I love the soaps! Very gentle and natural. The packaging is so aesthetic and perfect for gifts."</p>
+            <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+            <h4>Emily R.</h4>
+        </div>
+
+    </div>
+</section>
+
+<!-- PRODUCT CARDS SECTION -->
+<section class="products-section">
+    <h2 class="section-title">Popular Products</h2>
+
+    <div class="products-grid">
+
+        <!-- Product 2 -->
+        <div class="product-card">
+            <img src="images/Scented-Candle-collection.jpeg" alt="Product Image">
+            <h3>Scented Candle Collection</h3>
+            <!-- Star Rating -->
+    <div class="product-rating">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+    </div>
+            <p class="price">$7.99</p>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="product-card">
+            <img src="images/Aromatic Candle Collection.jpeg" alt="Product Image">
+            <h3>Aromatic Candle Collection</h3>
+            <!-- Star Rating -->
+    <div class="product-rating">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+    </div>
+            <p class="price">$6.50</p>
+        </div>
+       
+        <!-- Product 6 -->
+        <div class="product-card">
+            <img src="images/handcrafted-aromatherapy-candles.jpeg" alt="Product Image">
+            <h3>Hand Crafted Aromatherapy Candles</h3>
+            <!-- Star Rating -->
+    <div class="product-rating">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+    </div>
+            <p class="price">$25</p>
+        </div>
+        
+        <!-- Product 8 -->
+        <div class="product-card">
+            <img src="images/Clear Jar Swirl Candle.webp" alt="Product Image">
+            <h3>Clear Jar Swirl Candle</h3>
+            <!-- Star Rating -->
+    <div class="product-rating">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+    </div>
+            <p class="price">$12.50</p>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- FOOTER SECTION -->
+<footer class="footer">
+    <div class="footer-container">
+
+        <!-- Column 1: Logo + About + Social -->
+        <div class="footer-column">
+            <img src="images/logo.png" alt="Panda Street Company" class="footer-logo">
+            <p>Your go-to place for handmade soaps and candles crafted with love.</p>
+            <div class="footer-social">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+
+        <!-- Column 2: Quick Access -->
+        <div class="footer-column">
+            <h4>Quick Access</h4>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+
+        <!-- Column 3: Legal -->
+        <div class="footer-column">
+            <h4>Legal</h4>
+            <ul>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+                <li><a href="terms.html">Terms & Conditions</a></li>
+                <li><a href="refund.html">Refund Policy</a></li>
+            </ul>
+        </div>
+
+        <!-- Column 4: Newsletter -->
+        <div class="footer-column">
+            <h4>Newsletter</h4>
+            <p>Subscribe to get the latest updates and offers.</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Enter your email">
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2025 Panda Street Company. All Rights Reserved.</p>
+    </div>
+</footer>
+
+
+
+<script src="script.js"></script>
+
+
+</body>
+</html>
