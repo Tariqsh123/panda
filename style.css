@@ -12,6 +12,11 @@ body {
     background: #fff;
     padding-top: 120px;
 }
+@media(max-width:600px){
+ body {
+    padding-top: 100px;
+} 
+}
 
 /* NAVBAR */
 .navbar {
@@ -114,6 +119,9 @@ body {
 /* RESPONSIVE */
 @media(max-width: 768px) {
 
+  .hero{
+    height: 70vh;
+  }
     .menu {
         display: none; /* hide desktop menu */
     }
