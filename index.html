@@ -13,7 +13,7 @@
 <body>
 
     <!-- NAVBAR -->
-    <header class="navbar">
+         <header class="navbar">
         <div class="left-space"></div>
 
         <!-- Center Logo + Desktop Menu -->
@@ -48,6 +48,21 @@
         <!-- <a href="about.html">Account</a> -->
         <!-- <a href="#">Cart</a> -->
     </div>
+<!-- SIDE CART -->
+<div class="side-cart" id="sideCart">
+    <div class="cart-header">
+        <h3>Your Cart</h3>
+        <span class="close-cart">&times;</span>
+    </div>
+    <div class="cart-items">
+        <p>No items in cart.</p>
+    </div>
+    <div class="cart-footer">
+        <p>Total: $0.00</p>
+        <button class="checkout-btn">Checkout</button>
+    </div>
+</div>
+<div class="cart-overlay" id="cartOverlay"></div>
 
     <script>
         const hamburger = document.querySelector(".hamburger");
@@ -56,6 +71,26 @@ const mobileMenu = document.querySelector(".mobile-menu");
 hamburger.addEventListener("click", () => {
     mobileMenu.style.display =
         mobileMenu.style.display === "flex" ? "none" : "flex";
+});
+
+const cartIcon = document.querySelector(".fa-cart-shopping");
+const sideCart = document.getElementById("sideCart");
+const cartOverlay = document.getElementById("cartOverlay");
+const closeCart = document.querySelector(".close-cart");
+
+cartIcon.addEventListener("click", () => {
+    sideCart.classList.add("active");
+    cartOverlay.classList.add("active");
+});
+
+closeCart.addEventListener("click", () => {
+    sideCart.classList.remove("active");
+    cartOverlay.classList.remove("active");
+});
+
+cartOverlay.addEventListener("click", () => {
+    sideCart.classList.remove("active");
+    cartOverlay.classList.remove("active");
 });
 
     </script>
@@ -73,6 +108,44 @@ hamburger.addEventListener("click", () => {
 </section>
 
 <!-- After header -->
+<div class="after-header-text-main">
+    <h3>Luxury Soaps & Candles</h3>
+    <p>Indulge your senses with our handcrafted soaps and aromatic candles. Experience soothing scents and gentle care for your body and home.</p>
+    <h2>Transform your daily routine into a relaxing ritual with our natural, artisanal soaps and delightful scented candles</h2>
+</div>
+
+
+<section class="products-features">
+  <div class="container">
+    <h2 class="products-features-section-title">Our Premium Collection</h2>
+    <div class="product-features-grid">
+      <div class="product-feature-box">
+        <h3>Handcrafted Soaps</h3>
+        <p>Gentle on skin and enriched with natural ingredients for a refreshing cleanse.</p>
+      </div>
+      <div class="product-feature-box">
+        <h3>Aromatic Candles</h3>
+        <p>Fill your space with soothing scents crafted to relax and uplift your mood.</p>
+      </div>
+      <div class="product-feature-box">
+        <h3>Natural Ingredients</h3>
+        <p>We use only the finest natural oils, herbs, and fragrances in our products.</p>
+      </div>
+      <div class="product-feature-box">
+        <h3>Eco-Friendly Packaging</h3>
+        <p>Our packaging is sustainable and designed to reduce environmental impact.</p>
+      </div>
+      <div class="product-feature-box">
+        <h3>Perfect Gifts</h3>
+        <p>Beautifully packaged soaps and candles, perfect for any occasion.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
  <!-- AFTER HEADER SECTION -->
 <section class="after-header">
 
@@ -97,6 +170,13 @@ hamburger.addEventListener("click", () => {
 </section>
 
 
+<section class="healthy-journey">
+    <h3>Free of Harmful Chemicals</h3>
+    <p>Start on your journey to healthy, satisfying, aromatic, and flavorful organic Candles.</p>
+    <a href="shop.html">Shop Now</a>
+</section>
+
+
 <!-- product section -->
  <!-- PRODUCT CARDS SECTION -->
 <section class="products-section">
@@ -106,32 +186,22 @@ hamburger.addEventListener("click", () => {
 
         <!-- Product 1 -->
         <div class="product-card">
-            <img src="images/Luxurious Scented Candles.jpeg" alt="Product Image">
-            <h3>Luxurious Scented Candles</h3>
-            <!-- Star Rating -->
-    <div class="product-rating">
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-    </div>
-            <p class="price">$12.99</p>
-        </div>
+    <img src="images/Luxurious Scented Candles.jpeg" alt="Product Image">
+    <h3>Luxurious Scented Candles</h3>
+    <p class="price">$12.99</p>
+    <button class="add-to-cart">Add to Cart</button>
+</div>
+
 
         <!-- Product 2 -->
         <div class="product-card">
             <img src="images/Scented-Candle-collection.jpeg" alt="Product Image">
             <h3>Scented Candle Collection</h3>
             <!-- Star Rating -->
-    <div class="product-rating">
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-    </div>
+     
             <p class="price">$7.99</p>
+    <button class="add-to-cart">Add to Cart</button>
+
         </div>
 
         <!-- Product 3 -->
@@ -139,14 +209,9 @@ hamburger.addEventListener("click", () => {
             <img src="images/Luxurious Scented soap.jpeg" alt="Product Image">
             <h3>Luxurious Scented Soap</h3>
             <!-- Star Rating -->
-    <div class="product-rating">
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-    </div>
+     
             <p class="price">$14.50</p>
+    <button class="add-to-cart">Add to Cart</button>
         </div>
 
         <!-- Product 4 -->
@@ -154,14 +219,9 @@ hamburger.addEventListener("click", () => {
             <img src="images/Aromatic Candle Collection.jpeg" alt="Product Image">
             <h3>Aromatic Candle Collection</h3>
             <!-- Star Rating -->
-    <div class="product-rating">
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-    </div>
+     
             <p class="price">$6.50</p>
+    <button class="add-to-cart">Add to Cart</button>
         </div>
 
         <!-- Product 5 -->
@@ -169,56 +229,36 @@ hamburger.addEventListener("click", () => {
             <img src="images/Fern-pillar-candle.webp" alt="Product Image">
             <h3>Firn Pillar Candle</h3>
             <!-- Star Rating -->
-    <div class="product-rating">
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-    </div>
+     
             <p class="price">$19.50</p>
+    <button class="add-to-cart">Add to Cart</button>
         </div>
         <!-- Product 6 -->
         <div class="product-card">
             <img src="images/handcrafted-aromatherapy-candles.jpeg" alt="Product Image">
             <h3>Hand Crafted Aromatherapy Candles</h3>
             <!-- Star Rating -->
-    <div class="product-rating">
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-    </div>
+     
             <p class="price">$25</p>
+    <button class="add-to-cart">Add to Cart</button>
         </div>
         <!-- Product 7 -->
         <div class="product-card">
             <img src="images/Three Wick Bubble Candles.webp" alt="Product Image">
             <h3>Three Wick Bubble Candles</h3>
             <!-- Star Rating -->
-    <div class="product-rating">
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-    </div>
+     
             <p class="price">$19.99</p>
+    <button class="add-to-cart">Add to Cart</button>
         </div>
         <!-- Product 8 -->
         <div class="product-card">
             <img src="images/Clear Jar Swirl Candle.webp" alt="Product Image">
             <h3>Clear Jar Swirl Candle</h3>
             <!-- Star Rating -->
-    <div class="product-rating">
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-    </div>
+     
             <p class="price">$12.50</p>
+    <button class="add-to-cart">Add to Cart</button>
         </div>
 
     </div>
@@ -324,14 +364,9 @@ hamburger.addEventListener("click", () => {
             <img src="images/Scented-Candle-collection.jpeg" alt="Product Image">
             <h3>Scented Candle Collection</h3>
             <!-- Star Rating -->
-    <div class="product-rating">
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-    </div>
+     
             <p class="price">$7.99</p>
+    <button class="add-to-cart">Add to Cart</button>
         </div>
 
         <!-- Product 4 -->
@@ -339,14 +374,9 @@ hamburger.addEventListener("click", () => {
             <img src="images/Aromatic Candle Collection.jpeg" alt="Product Image">
             <h3>Aromatic Candle Collection</h3>
             <!-- Star Rating -->
-    <div class="product-rating">
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-    </div>
+     
             <p class="price">$6.50</p>
+    <button class="add-to-cart">Add to Cart</button>
         </div>
        
         <!-- Product 6 -->
@@ -354,14 +384,9 @@ hamburger.addEventListener("click", () => {
             <img src="images/handcrafted-aromatherapy-candles.jpeg" alt="Product Image">
             <h3>Hand Crafted Aromatherapy Candles</h3>
             <!-- Star Rating -->
-    <div class="product-rating">
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-    </div>
+     
             <p class="price">$25</p>
+    <button class="add-to-cart">Add to Cart</button>
         </div>
         
         <!-- Product 8 -->
@@ -369,14 +394,9 @@ hamburger.addEventListener("click", () => {
             <img src="images/Clear Jar Swirl Candle.webp" alt="Product Image">
             <h3>Clear Jar Swirl Candle</h3>
             <!-- Star Rating -->
-    <div class="product-rating">
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-    </div>
+     
             <p class="price">$12.50</p>
+    <button class="add-to-cart">Add to Cart</button>
         </div>
 
     </div>
@@ -398,21 +418,23 @@ hamburger.addEventListener("click", () => {
             </div>
         </div>
 
-        <!-- Column 2: Quick Access -->
+        <!-- Column 2: Contact Us -->
         <div class="footer-column">
-            <h4>Quick Access</h4>
+    <h4>Contact Us</h4>
+    <p><i class="fas fa-map-marker-alt"></i> 123 Panda Street, Springfield, USA</p>
+    <p><i class="fas fa-phone-alt"></i> +1 (555) 123-4567</p>
+    <p><i class="fas fa-envelope"></i> panda@gmail.com</p>
+</div>
+
+        <!-- Column 3: Quick Links -->
+        <div class="footer-column">
+            <h4>Quick Links</h4>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
+                <li><a href="about.html">About Us</a></li>
                 <li><a href="shop.html">Shop</a></li>
+                 
                 <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </div>
-
-        <!-- Column 3: Legal -->
-        <div class="footer-column">
-            <h4>Legal</h4>
-            <ul>
                 <li><a href="privacy.html">Privacy Policy</a></li>
                 <li><a href="terms.html">Terms & Conditions</a></li>
                 <li><a href="refund.html">Refund Policy</a></li>
