@@ -5,15 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Panda Street Company</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
 
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
     <!-- ICONS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
 
     <!-- NAVBAR -->
-         <header class="navbar">
+    <header class="navbar">
         <div class="left-space"></div>
 
         <!-- Center Logo + Desktop Menu -->
@@ -96,46 +96,67 @@ cartOverlay.addEventListener("click", () => {
     </script>
 
     <!-- NAv End -->
-<section class="privacy-policy-section">
-  <div class="privacy-container">
-    <h1>Refund Policy</h1>
+    
+  <section class="auth-section">
+  <div class="auth-container">
 
-    <p>At Panda Street Company, we want you to be completely satisfied with your purchase. This Refund Policy outlines the conditions under which you can request a refund or replacement.</p>
+    <!-- Form Toggle -->
+    <div class="auth-toggle">
+      <button id="loginBtn" class="active">Login</button>
+      <button id="signupBtn">Sign Up</button>
+    </div>
 
-    <h2>1. Eligibility for Refunds</h2>
-    <ul>
-      <li>Products must be unused, in original packaging, and in the same condition as received.</li>
-      <li>Refund requests must be made within 14 days of delivery.</li>
-      <li>Proof of purchase (invoice or order number) is required for all refund requests.</li>
-    </ul>
+    <!-- Login Form -->
+    <form id="loginForm" class="auth-form active">
+      <h2>Login</h2>
+      <input type="email" placeholder="Email" required>
+      <input type="password" placeholder="Password" required>
+      <button type="submit">Login</button>
+      <p class="switch-text">Don't have an account? <span id="switchToSignup">Sign Up</span></p>
+    </form>
 
-    <h2>2. Non-Refundable Items</h2>
-    <p>Certain items are not eligible for refunds, including personalized products, gift cards, and sale items unless damaged or defective.</p>
+    <!-- Sign Up Form -->
+    <form id="signupForm" class="auth-form">
+      <h2>Sign Up</h2>
+      <input type="text" placeholder="Full Name" required>
+      <input type="email" placeholder="Email" required>
+      <input type="password" placeholder="Password" required>
+      <input type="password" placeholder="Confirm Password" required>
+      <button type="submit">Sign Up</button>
+      <p class="switch-text">Already have an account? <span id="switchToLogin">Login</span></p>
+    </form>
 
-    <h2>3. Refund Process</h2>
-    <ul>
-      <li>Submit your refund request to <strong>info@pandastreet.com</strong> with order details.</li>
-      <li>Once approved, refunds will be processed using the original payment method.</li>
-      <li>Refunds may take 5–10 business days to appear on your account.</li>
-    </ul>
-
-    <h2>4. Replacement Policy</h2>
-    <p>If a product is defective or damaged during shipping, we will replace it at no additional cost. Contact us immediately with photos of the issue.</p>
-
-    <h2>5. Shipping Costs</h2>
-    <p>Shipping costs for returning items are the responsibility of the customer unless the product was damaged or incorrectly shipped.</p>
-
-    <h2>6. Changes to Refund Policy</h2>
-    <p>We may update this Refund Policy periodically. Changes will be posted on this page with the revised date.</p>
-
-    <h2>7. Contact Us</h2>
-    <p>If you have questions about refunds or replacements, please contact us at <strong>info@pandastreet.com</strong>.</p>
   </div>
 </section>
 
+<script>
+    const loginBtn = document.getElementById("loginBtn");
+const signupBtn = document.getElementById("signupBtn");
+const loginForm = document.getElementById("loginForm");
+const signupForm = document.getElementById("signupForm");
+const switchToSignup = document.getElementById("switchToSignup");
+const switchToLogin = document.getElementById("switchToLogin");
 
+// Toggle via top buttons
+loginBtn.addEventListener("click", () => {
+  loginBtn.classList.add("active");
+  signupBtn.classList.remove("active");
+  loginForm.classList.add("active");
+  signupForm.classList.remove("active");
+});
 
+signupBtn.addEventListener("click", () => {
+  signupBtn.classList.add("active");
+  loginBtn.classList.remove("active");
+  signupForm.classList.add("active");
+  loginForm.classList.remove("active");
+});
 
+// Toggle via text links
+switchToSignup.addEventListener("click", () => signupBtn.click());
+switchToLogin.addEventListener("click", () => loginBtn.click());
+
+</script>
 
 <!-- FOOTER SECTION -->
 <footer class="footer">
